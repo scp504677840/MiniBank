@@ -1,1 +1,2 @@
-# ViewPager滑动切换fragment+DrawerLayout侧滑菜单
+# ViewPager滑动切换fragment
+# DrawerLayout侧滑菜单
