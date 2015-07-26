@@ -1,0 +1,103 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.scp.minibank"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:name="com.scp.minibank.activity.CaptchaApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="JUHE_KEY"
+            android:value="b494a1729de7d225e88410b57e719c80" />
+
+        <!-- 主活动 -->
+        <activity android:name="com.scp.minibank.activity.MainActivity" >
+        </activity>
+        <!-- 引导页 -->
+        <activity android:name="com.scp.minibank.activity.GuideActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登录 -->
+        <activity android:name="com.scp.minibank.activity.login.LoginActivity" >
+        </activity>
+        <!-- 注册 -->
+        <activity android:name="com.scp.minibank.activity.register.RegisterSendCaptchaActivity" >
+        </activity>
+        <!-- 行内转账 -->
+        <activity android:name="com.scp.minibank.activity.main.MainTransferActivity" >
+        </activity>
+        <!-- 跨行转账 -->
+        <activity android:name="com.scp.minibank.activity.main.MainCorssTransferActivity" >
+        </activity>
+        <!-- 转账人管理 -->
+        <activity android:name="com.scp.minibank.activity.main.MainTransferPersonActivity" >
+        </activity>
+        <!-- 转账结果查询 -->
+        <activity android:name="com.scp.minibank.activity.main.MainTransferResultActivity" >
+        </activity>
+        <!-- 余额查询 -->
+        <activity android:name="com.scp.minibank.activity.main.MainBalanceActivity" >
+        </activity>
+        <!-- 详细信息查询 -->
+        <activity android:name="com.scp.minibank.activity.main.MainDetailsActivity" >
+        </activity>
+        <!-- 手机充值 -->
+        <activity android:name="com.scp.minibank.activity.pay.PayPhoneActivity" >
+        </activity>
+        <!-- QQ充值 -->
+        <activity android:name="com.scp.minibank.activity.pay.PayQQActivity" >
+        </activity>
+        <!-- 游戏充值 -->
+        <activity android:name="com.scp.minibank.activity.pay.PayGameActivity" >
+        </activity>
+        <!-- 物业充值 -->
+        <activity android:name="com.scp.minibank.activity.pay.PayHomeActivity" >
+        </activity>
+        <!-- 电费充值 -->
+        <activity android:name="com.scp.minibank.activity.pay.PayPowerActivity" >
+        </activity>
+        <!-- 水费充值 -->
+        <activity android:name="com.scp.minibank.activity.pay.PayWaterActivity" >
+        </activity>
+        <!-- 设置 -->
+        <activity android:name="com.scp.minibank.activity.setting.SettingActivity" >
+        </activity>
+        <!-- 设置账户 -->
+        <activity android:name="com.scp.minibank.activity.setting.SettingAccountActivity" >
+        </activity>
+        <!-- 更改用户名 -->
+        <activity android:name="com.scp.minibank.activity.user.UserNameActivity" >
+        </activity>
+        <!-- 更改昵称 -->
+        <activity android:name="com.scp.minibank.activity.user.UserNickNameActivity" >
+        </activity>
+        <!-- 更改手机号 -->
+        <activity android:name="com.scp.minibank.activity.user.UserTelActivity" >
+        </activity>
+        <!-- 实名认证 -->
+        <activity android:name="com.scp.minibank.activity.user.UserRealActivity" >
+        </activity>
+    </application>
+
+    <!-- 以下是短信验证码所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+</manifest>

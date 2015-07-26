@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical" >
+
+    <!-- 账户号 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/account_number_edittxet_text"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/account_number_edittxet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/account_number_edittxet_hint"
+            android:inputType="number"
+            android:maxLength="18"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- 支付密码 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/account_pwd_edittxet_text"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/account_pwd_edittxet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/account_pwd_edittxet_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:password="true"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- 账户余额 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/account_balance_edittxet_text"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/account_balance_edittxet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/account_balance_edittxet_hint"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- 是否冻结 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/account_frozen_text"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/account_frozen_radiogroup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/account_frozen_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/account_frozen_radiogroup_yes" />
+
+            <RadioButton
+                android:id="@+id/account_frozen_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/account_frozen_radiogroup_no" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- 存储方式 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/account_mode_text"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/account_mode_radiogroup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/account_mode_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/account_mode_radiogroup_yes" />
+
+            <RadioButton
+                android:id="@+id/account_mode_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/account_mode_radiogroup_no" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/account_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_selector"
+        android:text="@string/account_commit_text" />
+
+</LinearLayout>

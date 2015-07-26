@@ -1,0 +1,68 @@
+<resources>
+
+    <string name="app_name">Mini手机银行</string>
+    <!-- 主活动切换按钮 -->
+    <string name="main_bottom_mian_tv">交易</string>
+    <string name="main_bottom_pay_tv">缴费</string>
+    <string name="main_bottom_roe_tv">汇率</string>
+    <string name="main_bottom_user_tv">财富</string>
+    <!-- 引导页 -->
+    <string name="gui_btn_login">登录</string>
+    <string name="gui_btn_register">注册</string>
+    <!-- 交易 -->
+    <string name="fragment_main_transfer_text">行内转账</string>
+    <string name="fragment_main_cross_transfer_text">跨行转账</string>
+    <string name="fragment_main_transfer_person_text">转账人管理</string>
+    <string name="fragment_main_transfer_result_text">转账结果查询</string>
+    <string name="fragment_main_balance_text">余额查询</string>
+    <string name="fragment_main_details_text">详细信息查询</string>
+    <!-- 支付缴费 -->
+    <string name="fragment_pay_phone_text">手机充值</string>
+    <string name="fragment_pay_qq_text">QQ充值</string>
+    <string name="fragment_pay_game_text">游戏充值</string>
+    <string name="fragment_pay_home_text">物业缴费</string>
+    <string name="fragment_pay_power_text">电费</string>
+    <string name="fragment_pay_water_text">水费</string>
+    <!-- 注册 -->
+    <string name="register_sendcaptcha_starttext">+86</string>
+    <string name="register_sendcaptcha_hinttext">请输入手机号</string>
+    <string name="register_sendcaptcha_imgBtn_text">获取验证码</string>
+    <string name="register_sendcaptcha_getcaptcha_text">验证码</string>
+    <string name="register_sendcaptcha_getcaptcha_hint">请输入验证码</string>
+    <string name="register_sendcaptcha_nextBtntext">注册</string>
+    <string name="register_sendcaptcha_password_text">新密码</string>
+    <string name="register_sendcaptcha_password_hint">请输入新密码</string>
+    <string name="register_sendcaptcha_repassword_text">重复密码</string>
+    <string name="register_sendcaptcha_repassword_hint">请重新输一次新密码</string>
+    <!-- 登录 -->
+    <string name="login_account_edittext_hint">手机号</string>
+    <string name="login_password_edittext_hint">密码</string>
+    <string name="login_tologin_button_text">登录</string>
+    <!-- 设置账户 -->
+    <string name="account_number_edittxet_text">账户号</string>
+    <string name="account_number_edittxet_hint">请输入账户号</string>
+    <string name="account_pwd_edittxet_text">支付密码</string>
+    <string name="account_pwd_edittxet_hint">请输入支付密码（6位）</string>
+    <string name="account_balance_edittxet_text">账户余额</string>
+    <string name="account_balance_edittxet_hint">请输入账户余额</string>
+    <string name="account_frozen_text">是否冻结</string>
+    <string name="account_frozen_radiogroup_yes">是</string>
+    <string name="account_frozen_radiogroup_no">否</string>
+    <string name="account_mode_text">存储方式</string>
+    <string name="account_mode_radiogroup_yes">活期</string>
+    <string name="account_mode_radiogroup_no">死期</string>
+    <string name="account_commit_text">提交</string>
+    <!-- 余额 -->
+    <string name="main_balance_accountname_text">账户名</string>
+    <string name="main_balance_text">余额</string>
+    <string name="main_balance_ok_btn_text">确定</string>
+    <!-- 行内转账 -->
+    <string name="main_transfer_username_text">姓名</string>
+    <string name="main_transfer_accountNumber_text">账户名</string>
+    <string name="main_transfer_ok_btn">确定</string>
+    <string name="main_transfer_username_hint">对方姓名</string>
+    <string name="main_transfer_accountNumber_hint">对方账户</string>
+    <!-- 转账人管理 -->
+    <string name="main_transferPerson_accountNo_text">账户号</string>
+
+</resources>

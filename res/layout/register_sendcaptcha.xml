@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 发送验证码 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/register_sendcaptcha_starttext"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/register_sendcaptcha_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="@string/register_sendcaptcha_hinttext"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/register_sendcaptcha_sendBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/white_selector"
+            android:text="@string/register_sendcaptcha_imgBtn_text" />
+    </LinearLayout>
+
+    <!-- 填写验证码 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/register_sendcaptcha_getcaptcha_text"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/register_sendcaptcha_getcaptcha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="@string/register_sendcaptcha_getcaptcha_hint"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/register_sendcaptcha_getcaptcha_toolTipIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 输入新密码 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/register_sendcaptcha_password_text"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/register_sendcaptcha_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="@string/register_sendcaptcha_password_hint"
+            android:maxLength="20"
+            android:password="true"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/register_sendcaptcha_password_toolTipIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 重复新密码 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/register_sendcaptcha_repassword_text"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/register_sendcaptcha_repassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="@string/register_sendcaptcha_repassword_hint"
+            android:maxLength="20"
+            android:password="true"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/register_sendcaptcha_repassword_toolTipIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_sendcaptcha_nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/white_selector"
+        android:text="@string/register_sendcaptcha_nextBtntext"
+        android:textColor="#000000" />
+
+</LinearLayout>

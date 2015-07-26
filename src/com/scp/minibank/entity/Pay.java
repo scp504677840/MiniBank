@@ -1,0 +1,11 @@
+package com.scp.minibank.entity;
+
+/**
+ * ÷ß∏∂Ω…∑—
+ * 
+ * @author ÀŒ¥∫≈Ù
+ *
+ */
+public class Pay {
+
+}
